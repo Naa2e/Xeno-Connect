@@ -13,9 +13,15 @@ requirejs.config({
 });
 
 requirejs(
-  ["jquery", "hbs", "bootstrap", "get-members",
-  "q"],
+  ["jquery", "hbs", "bootstrap", "get-members", "q"],
   function($, Handlebars, bootstrap, members, q) {
-    members.loadMembers();
+    console.log("first line");
+    members.loadMembers()
+    .then(function(memberArray) {
+      require(['hbs!../templates/profile'], function(memberTpl) {
+        console.log("inside require");
+        $("#profiles").html(memberTpl({ members:memberArray }));
+      });
+    });
 
 });
