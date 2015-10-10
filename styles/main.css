@@ -1,8 +1,29 @@
 body {
-  background-color: pink; }
+  background-color: teal; }
 
 h1 {
   text-align: center;
-  color: purple; }
+  color: yellow; }
 
+.form-group {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  color: yellow;
+}
+.text-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.initially-hidden {
+  display: none;
+}
+
+img {
+  width: 100px;
+  height: 130px;
+}
 /*# sourceMappingURL=main.css.map */

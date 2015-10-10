@@ -11,6 +11,7 @@ define(function(require) {
       })
     .fail(function(xhr, status, error){
       deferred.reject(error);
+      console.log("failure to pull members data")
     });
     return deferred.promise;
     }

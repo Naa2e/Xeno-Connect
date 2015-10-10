@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Book store</title>
@@ -11,55 +10,56 @@
 </head>
 
 <body>
-    <h1>PLEASE DATE ME</h1>
-    <!--<div id="bookList">-->
-        <script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script>
-        <script src="objects.js"></script>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-md-offset-9">
-                    <p style="color:#69C4CC">sign in | sign up</p>
-                </div>
-            </div>
-            <div class="panel panel-info">
-                <div class="panel-header">
-                    <div class="row">
-                        <div class="col-md-5">
-                           <!-- <img src="../images/savings-multiplied-logo.png" class="img-responsive" style="margin-top:-50px;">-->
-                        </div>
-                    </div>
-                </div>
-                <nav>
-                    <ul class="nav nav-justified">
-                        <li class=""><a href="#">Profile</a></li>
-                        <li><a href="#">Interstellar Matches</a></li>
-                    </ul>
-                </nav>
-                <div class="panel-body">
-                    <div class "row">
-                        <div class="col-md-3">
-                            <div class="well">
-                                <!-- This is where the form went-->
+<nav>
+  <button id="member-nav"> member page</button>
+  <button id="profile-nav">my profile</button>
+</nav>
+<div class="login-page">
+  <h1>Xeno-Connect: Bringing Humans and Aliens Across the Universe</h1>
+  <div id="login">
+    <form>
+      <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" id="usr">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="text-center">
+        <button id="login-button" type="button" class="btn btn-default" aria-label="Left Align">
+        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+        Login and meet your Sol-Mate
+        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
 
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="col-md-6">
-                                <form action="" class="form-inline">
-                                    <div class="form-group">
 
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-md-6 text-right">Hey there Sexy (Name Goes Here JS?)
-                            </div>
-                            <!-- This is where the header thing goes with the dropdown 1 row 2 columns-->
-                            <div class="col-md-12" id="items">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div id="member-page" class="initially-hidden">
+  <h1>Singles near your Star Cluster</h1>
+    <div id="profiles">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="profile-page" class="initially-hidden">
+  <h1>Your Profile</h1>
+  <div>
+  </div>
+  <script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
+
 </body>
 
 </html>
