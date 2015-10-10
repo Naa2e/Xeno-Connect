@@ -1,4 +1,8 @@
 {{#each members}}
-  <h3>{{ name }}</h3>
-  <section>{{ classification }}</section>
+  <h3>Name: {{ name }}</h3>
+  <h4>Classification: {{ classification}}</h4>
+  <img src="{{ photo }}">
+  <p>Atmospheric requirements: {{ atmospheric_requirements }}</p>
+  <p>Likes: {{ likes }}</p>
+  <p>Dislikes: {{ dislikes }}</p>
 {{/each}}

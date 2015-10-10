@@ -5,7 +5,7 @@ define(function(require) {
   return {
     loadMembers: function(){
       var deferred = q.defer();
-      $.ajax("https://xeno-connect.firebaseio.com/members.json").done(function(members) {
+      $.ajax("https://zeno-connect.firebaseio.com/members.json").done(function(members) {
         console.log("members", members);
         deferred.resolve(members);
       })

@@ -4,9 +4,41 @@
       "name" : "Magnus",
       "photo" : "http://img08.deviantart.net/26c9/i/2009/285/9/c/mr__xenomorph_by_mrxenomorph.jpg",
       "classification" : "Xenomorph",
-      "atmospheric requirements" : "not picky",
+      "atmospheric_requirements" : "not picky",
       "likes" : "I like seeing new places and trying new things. Family is important, the larger the better.",
-      "dislikes" : "Flame-throwers, sudden temperature changes, anyone with the name 'Ripley' "
+      "dislikes" : "Flame-throwers, sudden temperature changes, anyone with the name 'Ripley' "      
+    },
+    {
+      "name" : "Suzanna",
+      "photo" : "http://nexus-wallpaper.com/wp-content/uploads/2013/07/cyborg-woman-face.png",
+      "classification" : "Cyborg",
+      "atmospheric_requirements" : "extreme temperatures",
+      "likes" : "Interplanetary holidays, star travel",
+      "dislikes" : ""
+    },
+    {
+      "name" : "Terminator",
+      "photo" : "http://pmcdeadline2.files.wordpress.com/2013/12/terminator-arnold-as-terminator__131206182643.jpeg",
+      "classification" : "Cyborg Assassin",
+      "atmospheric_requirements" : "",
+      "likes" : "Cheesy quotes, motorcycles, semi-automatic weapons, a good comedy",
+      "dislikes" : ""
+    },
+    {
+      "name" : "ET",
+      "photo" : "http://img2-1.timeinc.net/people/i/2014/sandbox/news/140609/et-600x450.jpg",
+      "classification" : "Extra Terrestrial",
+      "atmospheric_requirements" : "adaptive to numerous conditions; organic life-form",
+      "likes" : "telephones, bicycles, Reeses Pieces",
+      "dislikes" : "fire"
+    },
+    {
+      "name" : "R2-D2",
+      "photo" : "http://ecx.images-amazon.com/images/I/5113ZN8zXeL._AC_UL320_SR218,320_.jpg",
+      "classification" : "Robot",
+      "atmospheric_requirements" : "solid ground",
+      "likes" : "pleasant conversation, sources of electricity",
+      "dislikes" : ""
     }
   ]
 }
