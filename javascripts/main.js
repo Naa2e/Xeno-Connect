@@ -5,27 +5,47 @@ requirejs.config({
     'lodash': '../lib/bower_components/lodash/lodash.min',
     'hbs': '../lib/bower_components/require-handlebars-plugin/hbs',
     'bootstrap': '../lib/bower_components/bootstrap/dist/js/bootstrap.min',
-    'q': '../lib/bower_components/q/q'
+    'q': '../lib/bower_components/q/q',
+    'firebase': '../lib/bower_components/firebase/firebase'
   },
   shim: {
-    'bootstrap': ['jquery']
+    'bootstrap': ['jquery'],
+    'firebase': {exports: 'Firebase'}
   }
 });
 console.log("main.js running")
 requirejs(
-  ["jquery", "hbs", "bootstrap", "get-members", "q"],
-  function($, Handlebars, bootstrap, members, q) {
+  ["jquery", "hbs", "bootstrap", "get-members", "q", "login", "firebase"],
+  function($, Handlebars, bootstrap, members, q, login, firebase) {
     console.log("first line");
-    members.loadMembers()
-    .then(function(memberArray) {
-      require(['hbs!../templates/profile'], function(memberTpl) {
-        console.log("inside require");
-        $("#profiles").html(memberTpl({ members:memberArray }));
-      });
+
+    // need to move this code to trigger after successful authentication
+    
+
     });
+
+
     $('#login-button').click(function() {
-      $('.login-page').toggle();
-      $('#member-page').toggle();
+
+      // change the order of these; toggle if authenticated
+      
+      login.authenticate()
+      .then(function(authData){
+        $('.login-page').toggle();
+        $('#member-page').toggle();
+        $('#loginMessage').html("<p></p>");
+        console.log("logged in successfully");
+        console.log("User ID: ", authData.uid);
+        members.loadMembers()
+        .then(function(memberArray) {
+          require(['hbs!../templates/profile'], function(memberTpl) {
+            console.log("inside require");
+            $("#profiles").html(memberTpl({ members:memberArray }));
+          });
+      })
+      .fail(function(error){
+        $('#loginMessage').show().html("<p>" + error + "</p>");
+      });
     });
 
     $('#member-nav').click(function() {
