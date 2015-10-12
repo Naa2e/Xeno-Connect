@@ -1,33 +1,71 @@
 body {
-  background-color: teal; }
+    background-color: #0b1c47;
+}
+
+a {
+background-color: #8a9ed1;
+background-image: none;
+font-family: 'Chelsea Market', cursive;
+}
 
 h1 {
-  text-align: center;
-  color: yellow; }
+    font-family: 'Chelsea Market', cursive;
+    text-align: center;
+    color: #bb88bb;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#members {
+    width: 300px;
+    height: 365px;
+    border-style: outset;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    border-color: #bb88bb
+    display-
+}
+
+.name {
+    text-align: center;
+    color: #F9E176;
+    margin: 10px;
+}
+
+.panel {
+    background-color: #8a9ed1;
+}
 
 .form-group {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  text-align: center;
-  color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    color: #F9E176;
 }
+
 .text-center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .initially-hidden {
-  display: none;
+    display: none;
 }
 
 img {
-  width: 100px;
-  height: 130px;
+    width: 100px;
+    height: 130px;
+    margin: 5px;
 }
+
 
 .error-message {
   width: 300px;
 }
+
 /*# sourceMappingURL=main.css.map */

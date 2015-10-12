@@ -1,66 +1,54 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Xeno-Connect</title>
     <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://getbootstrap.com/examples/justified-nav/justified-nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
-<nav>
-  <button id="member-nav"> member page</button>
-  <button id="profile-nav">my profile</button>
-</nav>
-<div class="login-page">
-  <h1>Xeno-Connect: Bringing Humans and Aliens Across the Universe</h1>
-  <div id="login">
-    <form>
-      <div class="form-group">
-        <label for="usr">Name:</label>
-        <input type="text" class="form-control" id="usr">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
-      </div>
-      <div class="text-center">
-        <button id="login-button" type="button" class="btn btn-default" aria-label="Left Align">
-        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-        Login and meet your Sol-Mate
-        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-        </button>
-      </div>
-    </form>
-    <div class='text-center alert alert-danger initially-hidden error-message' id='loginMessage'></div>
-  </div>
-</div>
-
-
-<div id="member-page" class="initially-hidden">
-  <h1>Singles near your Star Cluster</h1>
-    <div id="profiles">
+    <nav>
+        <button id="member-nav"> member page</button>
+        <button id="profile-nav">my profile</button>
+    </nav>
+    <div class="login-page">
+        <h1>Xeno-Connect: Bringing Humans and Aliens Across the Universe</h1>
+        <div id="login">
+            <form>
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="text-center">
+                    <button id="login-button" type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Login and meet your Sol-Mate
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </form>
+            <div class='text-center alert alert-danger initially-hidden error-message' id='loginMessage'></div>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="profile-page" class="initially-hidden">
-  <h1>Your Profile</h1>
-  <div>
-  </div>
-  <script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
-
+    <div id="member-page" class="initially-hidden">
+        <h1>Singles near your Star Cluster</h1>
+        <div id="profiles">
+        </div>
+    </div>
+    <div id="profile-page" class="initially-hidden">
+        <h1>Your Profile</h1>
+        <div>
+        </div>
+        <script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
 </body>
 
 </html>
