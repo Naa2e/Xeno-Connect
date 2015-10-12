@@ -1,3 +1,5 @@
+<div class="name" "col-md-offset-6 ">Hey there Sexy (HBars Name)
+    </div>
 <div class="container">
     <div class="panel panel-info">
         <nav>
@@ -7,33 +9,19 @@
             </ul>
         </nav>
         <div class="panel-body">
-            <div class "row">
-                <div class="col-md-3">
-                    <div class="well">
-                        <h1> Singles Near Your Star Cluster </h1>
-                    </div>
+                {{#each members}}
+                <div class="col-md-4" id="members">
+                    <img src="{{ photo }}" id="pic">
+                    <p>Name: {{ name }}</p>
+                    <p>Classification: {{ classification}}</p>
+                    <p>Atmospheric requirements: {{ atmospheric_requirements }}</p>
+                    <p>Likes: {{ likes }}</p>
+                    <p>Dislikes: {{ dislikes }}</p>
                 </div>
-                <div>
-                    <div class="col-md-9">
-                        <div class="col-md-6 col-md-offset-6 text-right">Hey there Sexy (HBars Name)
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="clearfix visible-md-block">
-                            {{#each members}}
-                            <div class="col-md-4" id="members">
-                                <img src="{{ photo }}">
-                                <p>Name: {{ name }}</p>
-                                <p>Classification: {{ classification}}</p>
-                                <p>Atmospheric requirements: {{ atmospheric_requirements }}</p>
-                                <p>Likes: {{ likes }}</p>
-                                <p>Dislikes: {{ dislikes }}</p>
-                            </div>
-                            {{/each}}
-                        </div>
-                    </div>
-                </div>
+                {{/each}}
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
