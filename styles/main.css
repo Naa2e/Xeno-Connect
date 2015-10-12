@@ -2,6 +2,12 @@ body {
     background-color: #0b1c47;
 }
 
+a {
+background-color: #8a9ed1;
+background-image: none;
+font-family: 'Chelsea Market', cursive;
+}
+
 h1 {
     font-family: 'Chelsea Market', cursive;
     text-align: center;
@@ -14,11 +20,13 @@ p {
 
 #members {
     width: 300px;
-    height: 360px;
+    height: 365px;
     border-style: outset;
     margin: 5px;
     float: left;
     text-align: center;
+    border-color: #bb88bb
+    display-
 }
 
 .name {
