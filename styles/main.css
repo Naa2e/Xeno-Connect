@@ -2,9 +2,7 @@ body {
     background-color: #0b1c47;
 }
 
-a {
-background-color: #8a9ed1;
-background-image: none;
+.nikki {
 font-family: 'Chelsea Market', cursive;
 }
 
@@ -19,14 +17,13 @@ p {
 }
 
 #members {
-    width: 300px;
+    width: 359px;
     height: 365px;
     border-style: outset;
     margin: 5px;
     float: left;
     text-align: center;
-    border-color: #bb88bb
-    display-
+    border-color: #bb88bb;
 }
 
 .name {
